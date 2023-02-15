@@ -121,7 +121,7 @@ const internalServerError = () => {
 
 const happySad = (para) => {
   return new Promise((resolve, reject) => {
-    para > 1 ? resolve("happy") : reject("sad");
+    para >= 1 ? resolve("happy") : reject("sad");
   });
 };
 
